@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    nav {
+      background: #0f4c81;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 1.5rem;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 1rem;
+      background-color: #0f4c81;
+      color: #fff;
+    }
+
+    .hero-section .text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-section .links a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: #fff;
+      background: #ffc107;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .hero-section .links a:hover {
+      background: #ff8c00;
+    }
+
+    .skills-section, .testimony-section, .contact-section {
+      padding: 3rem 2rem;
+    }
+
+    .skills-section h2, .testimony-section h2, .contact-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      backface-visibility: visible;
+      background-color: #ff8c00;
+    }
+
+    .skills-section .cells {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: aqua;
+    }
+
+    .skills-section .cell {
+      text-align: center;
+      margin: 1rem;
+    }
+
+    .skills-section .cell img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .testimony-section .group {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .testimony-section .person-details img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .contact-section form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #0f4c81;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #ffc107;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="/">KONDA NARESH</a>
+      </div>
+      <div class="right">
+        <a href="https://github.com/NARESH-93" target="_blank">
+          <i class="fa-brands fa-github"></i> Github
+        </a>
+        <a href="https://www.linkedin.com/in/konda-naresh-k-naresh-1a6343318/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> Linkedin
+        </a>
+        <a href="mailto:your-email@example.com">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+      </div>
+    </nav>
+  
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="text">
+          <h2>Hi, I'm <span style="color: #ffc107;">KONDA NARESH</span> 👋</h2>
+          <p>I’m a passionate Computer Science Engineer, on my way to becoming a Software Engineer. I thrive on learning and improving my skills every day!</p>
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i> <span>Skills</span>
+            </a>
+            <a href="#testimony">
+              <i class="fa-solid fa-pen"></i> <span>Testimony</span>
+            </a>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i> <span>Contact</span>
+            </a>
+          </div>
+        </div>
+        <div class="headshot">
+          <img src="second.jpg" alt="KONDA NARESH Headshot" style="border-radius: 50%; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);">
+        </div>
+      </section>
+  
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: #666;"><h3><center>Here are the technologies I’ve worked with:</h3></p></center></p>
+        <div class="cells">
+          <div class="cell">
+            <img src="https://i.pinimg.com/736x/a7/c2/1e/a7c21e94addaca34feaf6900499e5c67.jpg" alt="HTML">
+            <span>HTML</span>
+          </div>
+          <div class="cell">
+            <img src="https://cronuts.digital/wp-content/uploads/2020/04/Artboard-11-1024x724.png" alt="CSS">
+            <span>CSS</span>
+          </div>
+          <div class="cell">
+            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-with-coffee-logo-10.png" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="cell">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/006/294/622/small_2x/initial-letter-c-slice-style-logo-template-design-vector.jpg" alt="C">
+            <span>C</span>
+          </div>
+          <div class="cell">
+            <img src="https://i.pinimg.com/originals/5c/f3/41/5cf3414bbe67723a8c03bd6340d7417b.jpg" alt="Java">
+            <span>Java</span>
+          </div>
+          <div class="cell">
+            <img src="https://i.pinimg.com/originals/82/a2/18/82a2188c985ce75402ae44fc43fe7e5e.png" alt="Python">
+            <span>Python</span>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Testimony Section -->
+      <section id="testimony" class="testimony-section">
+        <h2>Testimony</h2>
+        <div class="group">
+          <div class="person-details">
+            <img src="profilepic.png" alt="Profile Picture" style="border-radius: 50%; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);">
+            <p>KONDA NARESH</p>
+
+          </div>
+          <div class="text">
+           <h4> "As a bold and confident Computer Science student, I’m constantly evolving in the field of programming. I specialize in <strong>C</strong>, <strong>Java</strong>, <strong>Python</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. Every day, I aim to learn something new!"</h4>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: #666;"><h3><center>Feel free to reach out for any queries or collaboration opportunities!</center></h3></p>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="5" placeholder="Type your message here"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+  
